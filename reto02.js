@@ -7,3 +7,22 @@
  * - Dos palabras exactamente iguales no son anagrama.
  */
 
+let c1 = "amor"
+let c2 = "roma"
+
+console.log(esAnagrama(c1,c2) ? "es un anagrama" : "no es un anagrama")
+
+// probando las arrow function de paso q bronca leer documentación vscode dame las funciones con el puntito hdpppppppp !!!
+function esAnagrama(cadena1, cadena2){
+    cadena1.toLowerCase()
+    cadena2.toLowerCase()
+
+    if (cadena1 == cadena2) {
+        return false
+    } else {
+        const laTengoGrande = (c) => c.toLowerCase().split("").sort().join()
+        return laTengoGrande(cadena1) == laTengoGrande(cadena2)
+    }
+}
+
+//me costó un huevo y eso q soy mina 
